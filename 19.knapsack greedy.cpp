@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -16,6 +17,7 @@ int compare(const void *a, const void *b) {
 }
 
 // Function to solve the Fractional Knapsack problem using Greedy approach
+// items=4, capacity=50, value and weight: 60 10, 100 20, 120 30, 80 20.
 float knapsack(struct Item items[], int n, int capacity) {
     // Sort items by value-to-weight ratio in descending order
     qsort(items, n, sizeof(struct Item), compare);
