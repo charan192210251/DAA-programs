@@ -17,6 +17,7 @@ void printSolution(int assignment[], int costMatrix[N][N]) {
 
 int calculateCost(int assignment[], int costMatrix[N][N]) {
     int totalCost = 0;
+    //matrix: 12 7 9 7, 8 6 10 9, 10 4 3 8, 7 5 8 6.
     for (int i = 0; i < N; i++) {
         totalCost += costMatrix[i][assignment[i]];
     }
