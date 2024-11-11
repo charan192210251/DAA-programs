@@ -17,6 +17,7 @@ int optimalSearchTree(int keys[], int freq[], int n) {
     // Initialize the cost of single keys (single nodes)
     for (int i = 0; i < n; i++) {
         cost[i][i] = freq[i];
+        //keys-4, keys= 10 20 30 40, frequencies: 4 2 6 3
     }
 
     // Build the table for subtrees of increasing size
