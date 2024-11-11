@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 #define MAX 16
@@ -16,6 +17,7 @@ int tsp(int mask, int pos, int n) {
         return dp[mask][pos];
 
     int ans = INF;
+    //cities=4, matrix: 0 10 15 20, 10 0 35 25, 15 35 0 30, 20 25 30 0. 
     for (int city = 0; city < n; city++) {
         if ((mask & (1 << city)) == 0) {  // If the city hasn't been visited
             int newAns = dist[pos][city] + tsp(mask | (1 << city), city, n);
