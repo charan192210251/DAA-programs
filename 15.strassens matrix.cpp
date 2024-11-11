@@ -17,6 +17,8 @@ void subtract(int A[MAX][MAX], int B[MAX][MAX], int C[MAX][MAX], int size) {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             C[i][j] = A[i][j] - B[i][j];
+//a->  5302 4326 7814 9467
+//b-> 3247 2529 3903 7621
         }
     }
 }
