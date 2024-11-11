@@ -17,6 +17,7 @@ int graphColoring(int node, int m) {
         return 1;
     }
     for (int color = 1; color <= m; color++) {
+        //vertices=3, matrix: 011 101 110, colors=3.
         if (isSafe(node, color)) {
             colors[node] = color;
             if (graphColoring(node + 1, m)) {
