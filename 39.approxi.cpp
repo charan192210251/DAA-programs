@@ -17,6 +17,7 @@ double nearestNeighbor(int cities[][2], int n) {
     
     // Initialize visited array
     for (int i = 0; i < n; i++) {
+        //cities=4, coordinates: 0 0, 1 2, 3 1, 4 4.
         visited[i] = 0;  // No cities are visited initially
     }
 
