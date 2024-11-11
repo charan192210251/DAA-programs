@@ -17,6 +17,7 @@ int minKey(int key[], bool mstSet[], int vertices) {
     return min_index;
 }
 
+//vertices=4, matrix: 0206, 2038, 0300, 6800.
 // Function to print the constructed MST and calculate the total weight
 void printMST(int parent[], int graph[V][V], int vertices) {
     int totalWeight = 0;
