@@ -17,6 +17,7 @@ void floydWarshall(int graph[MAX][MAX], int n) {
             }
         }
     }
+    //vertices=4, matrix: 0300 3015 0102 0520.
     printf("The shortest distances between every pair of vertices are:\n");
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
