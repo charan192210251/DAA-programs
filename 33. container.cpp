@@ -16,7 +16,7 @@ int main() {
 
     // Get the weights of all items from user
     for(i = 0; i < numItems; i++) {
-        //capacity=50, weights: 10 20 30 40 15.
+        //capacity=50, items=5, weights: 10 20 30 40 15.
         printf("Enter the weight of item %d (in kg): ", i + 1);
         scanf("%f", &itemWeights[i]);
     }
